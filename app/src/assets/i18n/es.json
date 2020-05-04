@@ -1,0 +1,121 @@
+{
+    "COMMOM": {
+        "BACK_BUTTON": "Volver",
+        "CANCEL": "Cancelar",
+        "NEXT": "Siguiente",
+        "ERROR": "Se produjo un error en el servidor. Inténtelo de nuevo más tarde.",
+        "LEAVE_TITLE": "¿Desea salir?",
+        "LEAVE_MSG": "¿Está seguro de que desea cerrar la aplicación?",
+        "LEAVE_CONFIRM": "Salir"
+    },
+    "WELCOME": {
+        "Welcome": "Bienvenido al",
+        "SmartAnalytics": " TOTVS Analytics ",
+        "Mobile": "Móvil",
+        "Description": "En las próximas pantallas se configurará la aplicación.",
+        "DescriptionDetail": "En esta configuración podrá elegir qué proyecto e indicadores desea acompañar.",
+        "AreYouReady": "Cuando esté listo, haga clic en iniciar.",
+        "ActionButton": "INICIAR"
+    },
+    "PROJECT": {
+        "SelectProject": "Seleccione el proyecto que desea ver",
+        "NO_PROJECTS": "No se encontró ningún proyecto para ser configurado."
+    },
+    "LOGIN": {
+        "USERNAME": "Usuario",
+        "PASSWORD": "Contraseña",
+        "SHOW_PASSWORD": "Ver la contraseña",
+        "REMEMBER_ME": "Recuérdame",
+        "ALIAS": "Alias",
+        "LOGIN": "Entrar",
+        "INVALID_LOGIN": "Usuario o contraseña invalidos!",
+        "NETWORK_ERROR": "Compruebe su conexión a Internet y vuelva a intentarlo más tarde.",
+        "ERROR": "Se produjo un error en el servidor. Inténtelo de nuevo más tarde."
+    },
+    "SELECTAPP": {
+        "SelectApp": "Seleccione la aplicación que desea ver:",
+        "NO_APPS": "No se ha encontrado ninguna carpeta iniciada con #Móvil en este proyecto."
+    },
+    "CONFIG_REPORTS": {
+        "CREATE_TAB": {
+            "TITLE": "Crear Tabulación",
+            "MESSAGE": "Escriba un nombre para la nueva tabulación",
+            "BT_OK": "Crear",
+            "BT_CANCEL": "Cancelar"
+        },
+        "NO_SELECTED_MSG": "Es necesario seleccionar al menos un informe para cada Segmento",
+        "ADD_TAB_BTN": "Añadir Tabulación",
+        "NEXT": "Siguiente",
+        "FINISH": "Finalizar",
+        "ORDER_INFO_MSG": "Puede crear nuevas pestañas para organizar la visualización de sus informes",
+        "ORDER_REPORTS": "Pulse y arrastre para cambiar el orden de los informes"
+    },
+    "MENU": {
+        "DASHBOARDS": "Dashboards",
+        "CHANGE_PROJECT": "Intercambiar Proyecto",
+        "REMAKE_CONFIG": "Rehacer configuraciones",
+        "REORG_TABS": "Organizar Tabulaciónes",
+        "LOGOUT": "Salir",
+        "LOGOUT_TITLE": "¿Está seguro?",
+        "LOGOUT_MSG": "Si se desconecta, se borrará los datos offlines.",
+        "LOGOUT_CONFIRM": "Salir",
+        "LOGOUT_CANCEL": "Cancelar",
+        "METRICS": "Métricas",
+        "ATTRIBUTES": "Atributos",
+        "FILTERS": "Filtros"
+    },
+    "FILTERS": {
+        "HIDDEN_FILTERS": "Hay filtros en el informe que no se pudieron mostrar",
+        "OPTIONS": "Opciones",
+        "SHOW_LEGENDS": "Mostrar Subtítulos",
+        "SHOW_VALUES": "Mostrar valores",
+        "SHOW_Y": "Mostrar eje Y",
+        "SHOW_X": "Mostrar eje X",
+        "ROUND_VALUES": "Redondear valores",
+        "APPLY": "Aplicar"
+    },
+    "REPORT": {
+        "SHARE_EMAIL": "Enviar por email",
+        "EXPORT": "Guardar en el Álbum",
+        "REFRESH": "Actualizar",
+        "SHOW_DETAILS": "Mostrar Detalles",
+        "UNABLE_TO_RENDER": "No se puede exhibir este informe",
+        "REPORT_TABLE_INFO": "Este gráfico es una tabla, haga clic en la carta para verla.",
+        "BLOCKED": "No se puede ver el gráfico. Acceso bloqueado!.",
+        "NO_CONTENT": "Ningún dato corresponde a los criterios de filtrado",
+        "SHARE_MSG": "Compartido vía Analytics",
+        "PHOTO_SAVE_ERROR": "Error al guardar la foto",
+        "REMOVE_REPORT_ERROR": "Error al quitar el informe",
+        "PHOTO_SAVED": "Foto guardada en el álbum",
+        "UNSUPPORTED": "Este tipo de informe no es soportada",
+        "REMOVE": "Eliminar"
+    },
+    "RELOAD_PROJECT": {
+        "GOT_SAVED_PROJECTS": " Sus proyectos configurados:",
+        "SET_NEW_PROJECT": "Configurar nuevo proyecto",
+        "RELOAD": "Cargar"
+    },
+    "REORDER_TABS": {
+        "REORG_TABS": "Organizar Tabulaciónes",
+        "DELETE_PROJECT": "Quitar proyecto",
+        "DIALOG_TITLE": "Atención",
+        "DIALOG_MSG": "Quitar el proyecto NO quita el proyecto/informes de TOTVS Analytics, sólo se eliminará de sus preferencias y podrá reconfigurarse posteriormente.",
+        "CONFIRM": "Quitar",
+        "CANCEL": "Cancelar",
+        "REMOVE_ERROR": "Error al quitar el proyecto"
+    },
+    "APP-RATE": {
+        "TITLE": "¿Está disfrutando de la Legal Task",
+        "MESSAGE": "¿Usted podría evaluarnos en la tienda? ¡Lleva sólo unos segundos!",
+        "RATE": "Evaluar",
+        "LATER": "Evaluar más adelante",
+        "NO": "No, gracias."
+    },
+    "TABLE": {
+        "avg": "Aproximado",
+        "max": "Máximo",
+        "med": "Mediana",
+        "min": "Mínimo",
+        "sum": "Total"
+    }
+}

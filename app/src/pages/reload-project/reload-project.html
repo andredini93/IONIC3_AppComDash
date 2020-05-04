@@ -1,0 +1,29 @@
+<thf-toolbar [showLogo]='showLogo' [titleText]="'ANALYTICS'">
+</thf-toolbar>
+
+<ion-content has-header>
+  <ion-item>
+    <div class="textproject">
+      {{ 'RELOAD_PROJECT.GOT_SAVED_PROJECTS' | translate}}
+    </div>
+  </ion-item>
+
+  <ion-list [(ngModel)]="selectedProject" radio-group>
+    <ion-item *ngFor='let project of projectList'>
+      <ion-label>{{project.name}}</ion-label>
+      <ion-radio value="{{ project.id }}"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<div align="center" >
+				<button class="section-action" id="reload" ion-button color="#08719f" (click)="reloadProject()" [disabled]="!selectedProject">{{'RELOAD_PROJECT.RELOAD'|translate}}</button>
+			</div>
+		</ion-item>
+  </ion-list>
+
+
+
+</ion-content>
+<ion-footer class='footer' fixed>
+  <button ion-button color="#08719f" (click)="setNewProject()" block>{{'RELOAD_PROJECT.SET_NEW_PROJECT'|translate}}</button>
+</ion-footer>
+

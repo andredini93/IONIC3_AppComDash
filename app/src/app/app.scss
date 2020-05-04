@@ -1,0 +1,98 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+[has-header]{
+    margin-top: $totvs-toolbar-height;
+    height: calc(100% - #{$totvs-toolbar-height} )
+}
+
+.toolbar-title-md, .toolbar-title-ios {
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a5c60;
+    padding-left: 10px;
+}
+
+.bar-button-ios, .bar-button-md {
+    color: #4a5c60;
+}
+.totvs-spinner-container {
+    align-items: center;
+    text-align: center;
+    color: #26b1c0;
+    min-height: 48px;
+    display: grid;
+  }
+  
+  .totvs-spinner img {
+    width: 20px;
+    height: 20px;
+    -webkit-animation: totvs-spinner 1s infinite linear;
+    -moz-animation: totvs-spinner 1s infinite linear;
+    -o-animation: totvs-spinner 1s infinite linear;
+    animation: totvs-spinner 1s infinite linear;
+  }
+
+  .action-sheet-ios .action-sheet-group {
+      .action-sheet-button-default:not( .action-sheet-cancel ) {
+          .button-inner {
+            justify-content: left;
+
+            .action-sheet-icon {
+                position: absolute;
+                right: 24px;
+            }
+          }
+      }
+  }
+
+  ion-toast {
+    &.success {
+      .toast-wrapper {
+        background: $totvs-toaster-success-color;
+      }
+    } 
+    
+    &.warning {
+      .toast-wrapper {
+        background: $totvs-toaster-warning-color;
+        
+      }
+    } 
+  
+    &.error {
+      .toast-wrapper {
+        background: $totvs-toaster-error-color;
+      }
+    } 
+  
+    &.info {
+      .toast-wrapper {
+        background: $totvs-toaster-info-color;
+      }
+    } 
+
+  
+  }
+
+  .bigger-report {
+    height: 500px!important; 
+  }
+
+
+
+  

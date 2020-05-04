@@ -1,0 +1,9 @@
+<thf-toolbar [showMenu]='true' [showShadow]='false' [titleText]="'ANALYTICS'">
+</thf-toolbar>
+<ion-content has-header>
+
+    <super-tabs *ngIf='tabs.length > 0'  [scrollTabs]="true" [config]='config'>
+        <super-tab *ngFor='let tab of tabs' [root]="dashboardPage"  title="{{tab.title.replace('#Mobile ','')}}" [rootParams]='tab' ></super-tab>
+    </super-tabs>
+
+</ion-content>

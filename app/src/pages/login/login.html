@@ -1,0 +1,62 @@
+<ion-content class="totvs-login">
+  <!-- Header -->
+  <div class="totvs-login-title" align="center">
+      <br>TOTVS<br>Analytics
+  </div>
+
+  <!-- Form -->
+  <form [formGroup]="login">
+    <div class="totvs-login-form">
+      <ion-item>
+				<ion-label hidden>Alias</ion-label>
+        <ion-select #alias class="totvs-login-select-alias" [compareWith]="aliasCompareFn">
+					<ion-option *ngFor="let a of aliases; let i = index" [value]="a" [selected]="i == 0 ? true : false">{{ a.label }}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label class="login-input-icon">
+          <span class="ticon user"></span>
+        </ion-label>
+        <ion-input
+          #user
+          #input
+          clearInput
+          class="totvs-login-input"
+          formControlName="user"
+          placeholder="{{ 'LOGIN.USERNAME' | translate }}"
+          (keyup)="processKeyUp($event, password)"
+          (input)="input.value=$event.target.value.toLowerCase()" >
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="login-input-icon">
+          <span class="ticon lock"></span>
+        </ion-label>
+        <ion-input
+          #password
+          clearInput
+          formControlName="password"
+          type="password"
+          class="totvs-login-input"
+          placeholder="{{ 'LOGIN.PASSWORD' | translate }}"
+          clearOnEdit="false"
+          (keyup)="processKeyUpLogin($event, user.value,password.value, alias.value)">
+        </ion-input>
+      </ion-item>
+      <ion-item class="show-pass">
+        <ion-checkbox checked="false"  formControlName="showPassword" (ionChange)="managePwd(password)"></ion-checkbox>
+        <ion-label>{{ 'LOGIN.SHOW_PASSWORD' | translate }}</ion-label>
+      </ion-item>
+    </div>
+  </form>
+
+  <div>
+    <button id="loginButton" [disabled]="!login.valid" class="totvs-login-button" type="submit" ion-button block (tap)="doLogin(user.value, password.value, alias.value)">
+      {{ 'LOGIN.LOGIN' | translate }}
+    </button>
+    <ion-item class="remember-me">
+      <ion-toggle [(ngModel)]="rememberMe" (ionChange)="rememberUser(rememberMe)"></ion-toggle>
+      <ion-label>{{ 'LOGIN.REMEMBER_ME' | translate }}</ion-label>
+    </ion-item>
+  </div>
+</ion-content>

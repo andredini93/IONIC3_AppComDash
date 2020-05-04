@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{report.title}}</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="closeModal()">{{'COMMOM.BACK_BUTTON' | translate}}</button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div class='table'>
+    <table *ngIf='report.table'>
+        <thead>
+            <tr class="header">
+                <th *ngFor='let header of report.table.headers'>{{header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let row of tableRows'>
+                <td [ngClass]="{'totalizadora': ['avg','max','med','min','nat','sum'].includes(row[0])}" *ngFor="let column of row">
+										{{ handleValue(column) }}
+								</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</ion-content>

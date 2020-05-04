@@ -1,0 +1,30 @@
+page-select-project {
+  .bottomproject{
+    position: absolute;
+      text-align: center;
+      top:6%;
+      left: 75%;
+  }
+  .titleprojectlist{
+      text-align: center;
+      position: relative;
+      top:20%;
+      left: -10%;
+  }
+
+  .textproject{
+    font-size:large;
+    position: relative;
+  }
+  
+  .no-projects {
+    color:$totvs-text-input;
+    font-size: large;
+    position: relative;
+    padding: 9em 20px 10px 20px;
+    .icon {
+        font-size: 30px;
+        padding-bottom:16px;
+    }
+  }
+}

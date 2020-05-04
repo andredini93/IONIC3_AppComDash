@@ -1,0 +1,15 @@
+{
+  "name": "appGoodData",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/gooddata",
+      "proxyUrl": "http://localhost:5050/"
+    }
+  ],
+  "id": "d44d59b5",
+  "app_id": ""
+}

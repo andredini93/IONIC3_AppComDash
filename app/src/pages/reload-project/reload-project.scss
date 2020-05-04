@@ -1,0 +1,40 @@
+page-reload-project {
+
+    .content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .bottomproject{
+        position: absolute;
+          text-align: center;
+          top:6%;
+          left: 75%;
+      }
+      .titleprojectlist{
+          text-align: center;
+          position: relative;
+          top:20%;
+          left: -10%;
+      }
+    
+      .textproject{
+        font-size:large;
+        position: relative;
+      } 
+      .footer {
+		  padding: 10px;
+		  background-color: white
+	  }
+	  ion-content > .scroll-content{
+		padding-bottom: 40px;
+	  }
+	  .section-action{
+		height: 3.6rem !important;
+		font-size: 1.4rem !important;
+	  }
+}

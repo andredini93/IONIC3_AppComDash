@@ -1,0 +1,138 @@
+sa-report {
+
+    .analytics-tcard {
+        overflow: auto;
+    }
+
+    .report {
+        background-color: white;
+    }
+
+    .card {
+        background-color: white;
+        
+    }
+    .title{
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 8px;
+    }
+    .oneNumber {
+        margin: auto;
+        background: white;
+        width: 90%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        text-align: center;
+        .value{
+            font-size: 35px;
+        }
+        .legend {
+            font-size: 23px;
+        }
+    }
+    
+    .reportError {
+        background: white;
+        margin: auto;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+    }
+    .table {
+        margin: auto;
+        width: 90%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }    
+
+    .loding-container {
+        width: 120px;
+        height: 120px;
+        background: #ddd;
+    }
+    .icon-info {
+        margin: auto;
+        font-size: 25px;
+    }
+    .icon-error {
+        font-size: 25px;
+
+    }
+    .col-icon-error {
+        margin:auto;
+        
+    }
+
+
+    //circle
+    .loader {
+        font-size: 3px;
+        margin: 55px auto;
+        text-indent: -9999em;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #4a5c60;
+        background: -moz-linear-gradient(left, #4a5c60 10%, rgba(74,92,96, 0) 42%);
+        background: -webkit-linear-gradient(left, #4a5c60 10%, rgba(74,92,96, 0) 42%);
+        background: -o-linear-gradient(left, #4a5c60 10%, rgba(74,92,96, 0) 42%);
+        background: -ms-linear-gradient(left, #4a5c60 10%, rgba(74,92,96, 0) 42%);
+        background: linear-gradient(to right, #4a5c60 10%, rgba(74,92,96, 0) 42%);
+        position: relative;
+        -webkit-animation: load3 1.4s infinite linear;
+        animation: load3 1.4s infinite linear;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      .loader:before {
+        width: 50%;
+        height: 50%;
+        background: #4a5c60;
+        border-radius: 100% 0 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+      }
+      .loader:after {
+        background: white;
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        content: '';
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      @-webkit-keyframes load3 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes load3 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+                     
+}

@@ -1,0 +1,5 @@
+{
+    "SERVER_ADDRESS": "https://mingle.totvs.com.br/api",
+    "APP_ID": "59c3ef78d11c330001b5e421",
+    "ENV": "PROD"
+}

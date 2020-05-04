@@ -1,0 +1,178 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+$font-family-base: 'Nunito Sans', sans-serif;
+$font-family-ios-base: 'Nunito Sans', sans-serif;
+$font-family-md-base: 'Nunito Sans', sans-serif;
+
+$totvs-toolbar-height: 46px;
+
+$toolbar-border-color: white;
+$toolbar-background: white;
+$toolbar-button-color: #4a5c60;
+$toolbar-ios-button-color: #4a5c60;
+$toolbar-md-button-color: #4a5c60;
+
+$toolbar-ios-height: $totvs-toolbar-height;
+$toolbar-md-height: $totvs-toolbar-height;
+
+$toolbar-ios-padding: 0px;
+$toolbar-md-padding: 0px;
+
+$cordova-ios-statusbar-padding: 0px;
+$cordova-md-statusbar-padding: 0px;
+
+$toolbar-ios-button-color: #ffffff;
+$toolbar-md-button-color: #ffffff; 
+
+$text-input-ios-show-focus-highlight: #ea9b3e;
+$text-input-md-show-focus-highlight: #ea9b3e;
+
+$text-input-ios-show-valid-highlight: false !default;
+$text-input-md-show-valid-highlight: false !default;
+
+$text-input-ios-show-invalid-highlight: #c64840;
+$text-input-md-show-invalid-highlight: #c64840;
+
+$tabs-background: #ffffff;
+$tabs-border-color: #e4e7e7;
+
+$tabs-ios-background: $tabs-background;
+$tabs-md-background: $tabs-background; 
+$tabs-ios-border: solid 1px #e4e7e7;
+$tabs-ios-border-color: #e4e7e7;
+
+$tabs-ios-tab-color-active: #ea9b3e;
+$tabs-ios-tab-color-inactive: #4a5c60;
+$tabs-ios-tab-icon-color: $tabs-ios-tab-color-inactive;
+$tabs-md-tab-color-active: $tabs-ios-tab-color-active;
+$tabs-md-tab-color-inactive: $tabs-ios-tab-color-inactive; 
+$tabs-md-tab-icon-color: $tabs-md-tab-color-inactive;
+
+$tabs-md-tab-font-size: 12px;
+
+$totvs-primary: #189FC1;
+$totvs-destaque: #29b6c5;
+$totvs-primary-button-border: #08719f;
+$totvs-primary-grad-bottom: #0C93B5;
+$totvs-active-grad-bottom: #ea9b3e;
+$totvs-label-color: #778588;
+$totvs-inativo: #d2d6d7;
+$totvs-placeholder: #a4adaf;
+$totvs-label: #778588;
+$totvs-text-input: #4a5c60;
+$totvs-stacked-text: rgba(74, 92, 96, 0.75);
+
+$totvs-button-default-grad-top: #ffffff;
+$totvs-button-default-grad-bottom: #f6f7f7;
+
+$totvs-margin-default: 10px;
+$totvs-border-radius-default: 3px;
+
+$refresher-icon-color: $totvs-destaque;
+$refresher-text-font-size: 12px;
+
+$spinner-ios-crescent-color: $totvs-destaque;
+$spinner-md-crescent-color: $totvs-destaque;
+$refresher-text-color: $totvs-placeholder;
+
+$menu-width: 280px;
+$menu-ios-background: #4a5c60;
+$menu-md-background: #4a5c60;
+$menu-wp-background: #4a5c60;
+
+$totvs-toaster-success-color: #00b28e;
+$totvs-toaster-warning-color: #ea9b3e;
+$totvs-toaster-error-color: #c64840;
+$totvs-toaster-info-color: #4a5c60;
+
+//$checkbox-md-icon-size: 30px;
+//$checkbox-ios-icon-size: 21px;
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #4a5c60,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+@font-face {
+  font-family: "TotvsIcon";
+  src: url("../assets/fonts/TotvsIcon.ttf")
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-Regular.ttf")
+}
+
+* {
+  font-family: "Nunito Sans";
+}

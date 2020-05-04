@@ -1,0 +1,5 @@
+<ion-content class='content'>
+	<sa-report *ngFor='let report of reports' [report]='report' (hide)='hideReport($event)' (excluded)='removeReport($event)'></sa-report>
+
+	
+</ion-content>

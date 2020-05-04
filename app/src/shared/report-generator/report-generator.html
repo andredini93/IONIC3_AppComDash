@@ -1,0 +1,64 @@
+<ion-card class='card' id="{{report.identifier}}" class="analytics-tcard">
+	<ion-card-header no-padding padding-left>
+		<ion-row class='title'>
+			<ion-col col-11>
+				<div text-wrap>{{report.title}}</div>&nbsp;
+			</ion-col>
+			<!--ion-col col-1 (tap)='showPopOver($event)'-->
+			<ion-col col-1 (click)='showActionSheet($event)' *ngIf='!isLoading && !isExporting'>
+				<ion-icon class='more' color='primary' item-end large name="more"></ion-icon>
+			</ion-col>
+			<!-- <ion-col col-1 (click)='showActionSheet($event)' *ngIf='!invalidReport && !isLoading && !isExporting'>
+					<ion-icon class='more' color='primary' item-end large name="more"></ion-icon>
+				</ion-col> -->
+			<!-- <ion-col col-1 (click)='hideReport($event)' *ngIf='invalidReport && !isLoading'>
+					<ion-icon class='more' color='primary' item-end large name="close"></ion-icon>
+				</ion-col> -->
+		</ion-row>
+	</ion-card-header>
+	<ion-card-content no-padding (click)='showModal()'>
+		<div *ngIf='isLoading' class="loader">
+		</div>
+
+		<!--div *ngIf='isLoading' class="loader loding-container "></div-->
+		<div padding-bottom *ngIf='!isLoading && !reportType && parsedReport.reportType==="chart"' style="display: block">
+			<canvas #graph baseChart style="height:250px;width: content-box;padding-right:5px;padding-left:5px;" class='report' [datasets]="parsedReport.datasets"
+			 [labels]="parsedReport.labels" [options]="parsedReport.options" [legend]="parsedReport.options.legend" [colors]="parsedReport.colors"
+			 [chartType]="parsedReport.type">
+			</canvas>
+		</div>
+		<div class='oneNumber' *ngIf='!isLoading && !parsedReport.noContent && parsedReport.reportType==="oneNumber"' style="display: block">
+			<div class='value'>{{parsedReport.data}}</div>
+			<!--<div class='legend'>{{parsedReport.metrics[0].title}}</div>-->
+		</div>
+
+		<div *ngIf='!isLoading && !parsedReport.noContent && parsedReport.reportType==="grid"' class='table'>
+			<ion-row>
+				<ion-col col-12>
+					<ion-icon class='icon-info' color='primary' item-end large name="open"></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>{{'REPORT.REPORT_TABLE_INFO' | translate}}</ion-col>
+			</ion-row>
+		</div>
+
+		<div class='reportError' *ngIf='invalidReport && !isLoading' style="display: block">
+			<ion-row>
+				<ion-col col-2 class='col-icon-error'>
+					<ion-icon class='icon-error' color='primary' item-end large name="sad"></ion-icon>
+				</ion-col>
+				<ion-col col-10 *ngIf="showUnsupportedChartError">{{'REPORT.UNSUPPORTED' | translate}}</ion-col>
+				<ion-col col-10 *ngIf="showUnableToRenderChartError">{{'REPORT.UNABLE_TO_RENDER' | translate}}</ion-col>
+				<ion-col col-10 *ngIf="projectBlocked">{{'REPORT.BLOCKED' | translate}}</ion-col>
+
+			</ion-row>
+		</div>
+
+		<div class='reportError' *ngIf='parsedReport.noContent && !isLoading' style="display: block">
+			<div class='legend'>{{'REPORT.NO_CONTENT' | translate}}</div>
+		</div>
+
+
+	</ion-card-content>
+</ion-card>

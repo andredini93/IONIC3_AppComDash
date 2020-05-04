@@ -1,0 +1,6 @@
+projectKey=novastecnologias-analytics
+serverUrl=http://10.172.0.99:9000
+serverVersion=7.5.0.20543
+dashboardUrl=http://10.172.0.99:9000/dashboard?id=novastecnologias-analytics
+ceTaskId=AWw-suYxMlEc367SJqwB
+ceTaskUrl=http://10.172.0.99:9000/api/ce/task?id=AWw-suYxMlEc367SJqwB

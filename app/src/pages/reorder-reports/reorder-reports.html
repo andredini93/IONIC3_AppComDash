@@ -1,0 +1,13 @@
+<thf-toolbar [showMenu]='true' [titleText]="'ANALYTICS'">
+</thf-toolbar>
+<ion-content has-header>
+	<h1 text-center>{{title}}</h1>
+	<ion-list paddind-top>
+		<ion-item-group side="start" reorder="true" (ionItemReorder)="$event.applyTo(reports); reordedReport();" >
+			<ion-item *ngFor="let report of reports" no-padding text-wrap>
+				<span color="primary" item-content>{{ report.title }}</span>
+				<ion-toggle [(ngModel)]="report.visible" (ionChange)="toggleVisibility(report)" item-end></ion-toggle>
+			</ion-item>
+		</ion-item-group>
+	</ion-list>
+</ion-content>

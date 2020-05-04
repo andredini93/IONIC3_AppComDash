@@ -1,0 +1,133 @@
+<ion-menu [content]="mycontent" class="totvs-side-menu">
+    <ion-content>
+        <div class="section title">
+            <img class="imageGrafic" src="assets/img/main_logo_white.png">
+            <div padding-top>TOTVS</div>
+            <div>Analytics</div>
+        </div>
+
+        <ion-list no-lines>
+            <ion-item class='menu-item' menuToggle (tap)='navigate("DashboardPage")' [ngClass]=" current == 'DashboardPage' ? 'active' : ''">
+                <ion-icon name="trending-up" item-left></ion-icon>
+                {{'MENU.DASHBOARDS' | translate}}
+            </ion-item>
+
+            <ion-item class='menu-item' menuToggle (tap)='navigate("ReorderTabsPage")' [ngClass]=" current == 'ReorderTabsPage' ? 'active' : ''">
+                <ion-icon name="swap" item-left></ion-icon>
+                {{'MENU.REORG_TABS' | translate}}
+            </ion-item>
+
+            <ion-item class='menu-item' menuToggle (tap)='navigate("ChangeProject")' [ngClass]=" current == 'ChangeProject' ? 'active' : ''">
+                <ion-icon name="shuffle" item-left></ion-icon>
+                {{'MENU.CHANGE_PROJECT' | translate}}
+            </ion-item>
+        </ion-list>
+
+
+
+    </ion-content>
+    <ion-footer no-lines>
+        <ion-list>
+            <ion-item class='menu-item' no-lines (tap)='showConfirmLogout()'>
+                <ion-icon name="log-out" item-left></ion-icon>
+                {{'MENU.LOGOUT' | translate}}
+            </ion-item>
+        </ion-list>
+
+    </ion-footer>
+</ion-menu>
+
+<ion-menu side="right" [content]="mycontent" [swipeEnabled]="false">
+    <ion-content text-center class='details' *ngIf='report'>
+
+        <div class='title'>
+            {{title}}
+        </div>
+
+        <div class="summary" *ngIf="summary">
+            {{summary}}
+        </div>
+
+        <ion-grid class="button-group">
+          <ion-row>
+            <ion-col>
+              <button ion-button block  [class.selected]="btGroup == 1" (tap)="changeSegment(1)">{{ 'MENU.METRICS' | translate }}</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button block  [class.selected]="btGroup == 2" (tap)="changeSegment(2)">{{ 'MENU.ATTRIBUTES' | translate }}</button>
+            </ion-col>
+            <ion-col>
+              <button ion-button block  [class.selected]="btGroup == 3" (tap)="changeSegment(3)">{{ 'MENU.FILTERS' | translate }}</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <!--<div class='item-header' *ngIf="metrics">
+            Métricas:
+        </div>-->
+
+        <div class="item-body"  *ngIf="metrics && btGroup == 1">
+            <span *ngFor='let metric of metrics' class="item-content">{{ metric.title }}<br></span>
+        </div>
+
+        <!--<div class='item-header' *ngIf="attributes">
+            Atributos:
+        </div>-->
+
+        <div class="item-body" *ngIf="attributes && btGroup == 2">
+            <span *ngFor='let attribute of attributes' class="item-content">{{ attribute.title }}<br> </span>
+        </div>
+
+        <!--<div class='item-header' *ngIf="listFiltersText">
+            Filtros:
+        </div>-->
+
+        <div class="item-body" *ngIf="listFiltersText && btGroup == 3">
+            <span *ngFor='let filtersText of listFiltersText' class="item-content">{{ filtersText }}<br> </span>
+            <span *ngIf='hasInvalidFilters'> {{'FILTERS.HIDDEN_FILTERS' | translate}}</span>
+        </div>
+
+        <!--div class='item-header'>:</div>-->
+        <ion-card class="options-card">
+            <ion-card-header class="options-card-header">
+                {{'FILTERS.OPTIONS' | translate}}
+            </ion-card-header>
+
+            <ion-list class="options-card-content">
+                <ion-item *ngIf='type != "grid"' no-padding>
+                    <ion-label>{{'FILTERS.SHOW_LEGENDS' | translate}}</ion-label>
+                    <ion-toggle [(ngModel)]="cacheConfig.showLegend"></ion-toggle>
+                </ion-item>
+                <ion-item *ngIf='type != "grid"' no-padding>
+                    <ion-label>{{'FILTERS.SHOW_VALUES' | translate}}</ion-label>
+                    <ion-toggle [(ngModel)]="cacheConfig.showValues"></ion-toggle>
+                </ion-item>
+                <ion-item *ngIf='type != "grid"' no-padding>
+                    <ion-label>{{'FILTERS.SHOW_Y' | translate}}</ion-label>
+                    <ion-toggle [(ngModel)]="cacheConfig.showYAxes"></ion-toggle>
+                </ion-item>
+                <ion-item *ngIf='type != "grid"' no-padding>
+                    <ion-label>{{'FILTERS.SHOW_X' | translate}}</ion-label>
+                    <ion-toggle [(ngModel)]="cacheConfig.showXAxes"></ion-toggle>
+								</ion-item>
+								<!-- Arredondar? -->
+								<ion-item no-padding>
+                    <ion-label>{{'FILTERS.ROUND_VALUES' | translate}}</ion-label>
+                    <ion-toggle [(ngModel)]="cacheConfig.roundValues"></ion-toggle>
+                </ion-item>
+            </ion-list>
+
+            <ion-row class="options-card-footer">
+                <ion-col center text-center>
+                    <button ion-button icon-left clear (click)='saveOptions()'>
+                    <ion-icon name="check"></ion-icon>
+                    <div>{{'FILTERS.APPLY' | translate}}</div>
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

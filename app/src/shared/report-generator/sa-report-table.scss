@@ -1,0 +1,30 @@
+modal-sa-report-table {
+    .table {
+        white-space: nowrap;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        overflow-x: scroll;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            padding: 0.30rem;
+            text-align: center;
+            border: 1px solid #ccc;
+          }
+    }
+    .header {
+        background: rgb(226, 225, 225)
+	}
+	.totalizadora{
+		background: #efefef;
+		font-weight: bold;
+	}
+    .attr {
+        background: rgb(241, 240, 240)
+    }
+    .subAttr {
+        background: #FFF9F9
+    }
+}

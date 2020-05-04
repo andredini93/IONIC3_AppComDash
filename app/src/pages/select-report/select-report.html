@@ -1,0 +1,26 @@
+<thf-toolbar  [titleText]="'ANALYTICS'" [buttonText]="nextButton" [buttonDisabled]="!selectedReports" (buttonCallback)="next()">
+</thf-toolbar>
+
+<ion-content has-header>
+
+  <ion-slides pager class="scroll-slides" paginationType="progress">
+    <ion-slide *ngFor='let report of reports' padding-top>
+      {{report.app.name}}
+      
+      <ion-card *ngFor='let r of report.reports' (click)='toggle(r)'>
+        <ion-card-content>
+          <ion-row>
+            <ion-col col-11>
+              {{ r.title }}
+            </ion-col>
+            <ion-col col-1>
+              <ion-checkbox [(ngModel)]='r.visible' color="primary"></ion-checkbox>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

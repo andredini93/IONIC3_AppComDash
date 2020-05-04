@@ -1,0 +1,75 @@
+thf-toolbar {
+  .toolbar-background, .toolbar-background-md, .toolbar-background-ios  {
+    background: $toolbar-background;
+  }
+
+  .title, .toolbar-ios .title {
+    padding: 0px;
+    position: relative;
+    width: initial;
+    
+  }
+
+  .toolbar-title-md, .toolbar-title-ios {
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a5c60;
+    padding-left: 0px;
+    // text-align: center;
+  }
+
+  .title {
+    height: 100%;
+  }
+
+  .toolbar, .toolbar-md, .toolbar-ios  {
+    padding: 0px;
+    align-items: flex-end;
+  }
+
+  
+  .toolbar-content-md, .toolbar-content-ios {
+    display: inline-flex;
+    align-items: stretch;
+  }
+
+  .totvs-toolbar {
+    height: $totvs-toolbar-height;
+    color: #4a5c60;
+  }
+
+  .totvs-toolbar.logo {
+    width: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .totvs-toolbar.title {
+    flex-grow: 2;
+  }
+
+  .totvs-tollbar.button {
+    width: 60px;
+    padding: 5px 10px 5px 5px;
+    height: $totvs-toolbar-height;
+    border: none;
+    font-size: 12px;
+    background: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a5c60;
+  }
+
+  .totvs-tollbar.button.disabled {
+    color: #d2d6d7;
+  }
+  .back-button {
+    padding-bottom: 12px;
+  }
+  
+}

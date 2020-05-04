@@ -1,0 +1,34 @@
+page-reorder-tabs {
+    .icon {
+        padding-bottom: 0 !important;
+        font-size:1.6em;
+        padding: 0;
+    }
+    
+    
+    .list .item,
+    .list-md .item-md,
+    .list-ios .item-ios {
+        padding: 0px;
+
+        .input-wrapper {
+            padding-left: 7px;
+        }
+    }
+
+    .list .item-block .item-inner,
+    .list-md .item-block .item-inner,
+    .list-ios .item-block .item-inner {
+       /* border-bottom: solid 1px yellow;*/
+       padding-left: 5px;
+       padding-right: 10px;
+    }
+
+    .list-md ion-item-options .button ,
+    .list-ios ion-item-options .button {
+        min-width: 55px;
+    }
+    .footer {
+        padding: 10px;
+    }
+}

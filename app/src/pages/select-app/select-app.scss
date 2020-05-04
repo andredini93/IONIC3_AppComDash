@@ -1,0 +1,53 @@
+page-select-app {
+    .titleselectapk {
+        text-align: center;
+        position: relative;
+        top: 20%;
+        left: -10%;
+    }
+    .textapk {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        font-size: large;
+    }
+    .texttitle {
+        font-size: large;
+        position: relative;
+    }
+    .bottomselect {
+        position: absolute;
+        text-align: center;
+        top: 6%;
+        left: 75%;
+    }
+    .item {
+        width: 10em;
+        height: 10em;
+        color: black;
+        border: solid 1px #e4e7e7;
+        box-shadow: 0px 2px 4px 0 rgba(74, 92, 96, 0.3);
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        border-radius: 3px;
+        position: relative;
+    }
+    .check {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .no-apps {
+        color:$totvs-text-input;
+        font-size: large;
+        position: relative;
+        padding: 9em 20px 10px 20px;
+        .icon {
+            font-size: 30px;
+            padding-bottom:16px;
+        }
+    }
+    
+}

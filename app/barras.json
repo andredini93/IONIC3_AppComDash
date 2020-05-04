@@ -1,0 +1,232 @@
+{
+    "execResult": {
+        "reportView": {
+            "chart": {
+                "styles": {
+                    "global": {
+                        "colorMapping": [
+                            {
+                                "guid": "guid1",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31126"
+                            },
+                            {
+                                "guid": "guid2",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31125"
+                            },
+                            {
+                                "guid": "guid3",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31124"
+                            }
+                        ]
+                    },
+                    "yui_3_11_0_1_1387449527309_493597": {
+                        "axis": {
+                            "majorlabel": {
+                                "display": "none"
+                            },
+                            "label": {
+                                "display": "none"
+                            }
+                        }
+                    },
+                    "yui_3_14_1_1_1395858569666_75797": {
+                        "axis": {
+                            "label": {
+                                "display": "none"
+                            }
+                        }
+                    }
+                },
+                "buckets": {
+                    "y": [
+                        {
+                            "id": "yui_3_11_0_1_1387449527309_493597",
+                            "uri": "metric"
+                        }
+                    ],
+                    "color": [
+                        {
+                            "id": "yui_3_11_0_1_1387449527309_493598",
+                            "uri": "metricGroup"
+                        }
+                    ],
+                    "x": [
+                        {
+                            "id": "yui_3_14_1_1_1395858569666_75797",
+                            "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26724"
+                        },
+                        {
+                            "id": "yui_3_11_0_1_1387449527309_493600",
+                            "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16251"
+                        }
+                    ],
+                    "angle": []
+                },
+                "type": "bar"
+            },
+            "reportName": "Contas a Pagar – Títulos Pagos",
+            "columnWidths": [
+                {
+                    "width": 184,
+                    "locator": [
+                        {
+                            "attributeLocator2": {
+                                "element": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16250/elements?id=2",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16251"
+                            }
+                        },
+                        {
+                            "metricLocator": {
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31124"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "width": 150,
+                    "locator": [
+                        {
+                            "attributeLocator2": {
+                                "element": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16250/elements?id=2",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16251"
+                            }
+                        },
+                        {
+                            "metricLocator": {
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31125"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "width": 145,
+                    "locator": [
+                        {
+                            "attributeLocator2": {
+                                "element": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16250/elements?id=2",
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16251"
+                            }
+                        },
+                        {
+                            "metricLocator": {
+                                "uri": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31126"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "filters": [
+                {
+                    "tree": {
+                        "content": [
+                            {
+                                "value": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723",
+                                "position": {
+                                    "column": 14,
+                                    "line": 1
+                                },
+                                "type": "attribute object"
+                            },
+                            {
+                                "content": [
+                                    {
+                                        "value": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723/elements?id=24160",
+                                        "position": {
+                                            "column": 71,
+                                            "line": 1
+                                        },
+                                        "type": "attributeElement object"
+                                    },
+                                    {
+                                        "value": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723/elements?id=24161",
+                                        "position": {
+                                            "column": 143,
+                                            "line": 1
+                                        },
+                                        "type": "attributeElement object"
+                                    }
+                                ],
+                                "position": {
+                                    "column": 71,
+                                    "line": 1
+                                },
+                                "type": "list"
+                            }
+                        ],
+                        "position": {
+                            "column": 67,
+                            "line": 1
+                        },
+                        "type": "in"
+                    },
+                    "expression": "[/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723] IN ([/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723/elements?id=24160], [/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723/elements?id=24161])"
+                }
+            ],
+            "rows": [],
+            "sort": {
+                "columns": [],
+                "rows": []
+            },
+            "oneNumber": {
+                "labels": {}
+            },
+            "format": "chart",
+            "columns": [
+                {
+                    "drillDownStepAttributeDF": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26700",
+                    "sort": "pk",
+                    "attributeTitle": "Month/Year (DATA)",
+                    "summary": "Month and Year",
+                    "displayFormId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26724",
+                    "baseElementURI": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723/elements?id=",
+                    "title": "Month/Year (DATA)",
+                    "attributeId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/26723",
+                    "totals": [
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                {
+                    "attributeTitle": "Modalidade",
+                    "summary": "",
+                    "displayFormId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16251",
+                    "baseElementURI": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16250/elements?id=",
+                    "title": "Modalidade",
+                    "attributeId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/16250",
+                    "totals": [
+                        [],
+                        [],
+                        []
+                    ]
+                },
+                "metricGroup"
+            ],
+            "metrics": [
+                {
+                    "format": "$ #,##0.00",
+                    "summary": "Indica o total dos valores vencidos. Este valor representa o quanto à empresa ficou inadimplente com seus fornecedores.",
+                    "drillAcrossStepAttributeDF": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/6592",
+                    "title": "Vl Pago [Contas a Pagar - Pgto]",
+                    "metricId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31126"
+                },
+                {
+                    "format": "$ #,##0.00",
+                    "summary": "Indica o valor total de todos os descontos obtidos.",
+                    "drillAcrossStepAttributeDF": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/6592",
+                    "title": "Vl Desconto Recebido",
+                    "metricId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31124"
+                },
+                {
+                    "format": "$ #,##0.00",
+                    "summary": "Indica o valor total dos juros pagos, inclusive multa.",
+                    "drillAcrossStepAttributeDF": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/6592",
+                    "title": "Vl Juros Pagos",
+                    "metricId": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/31125"
+                }
+            ]
+        },
+        "reportDefinition": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/obj/71261",
+        "dataResult": "/gdc/md/p1o6r7rayu53foyq0wk8ivir56sqlg72/dataResult/1587411861724233472"
+    }
+}

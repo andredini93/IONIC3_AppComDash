@@ -1,0 +1,26 @@
+<thf-toolbar [showLogo]='true' [titleText]="'ANALYTICS'">
+</thf-toolbar>
+
+<ion-content has-header>
+  <div class="section title">
+    <img class="imageGrafic" src="assets/img/main_logo.png">
+  </div>
+  
+  <div class="section welcome">
+   {{'WELCOME.Welcome' |translate}}<br>
+   {{'WELCOME.SmartAnalytics'| translate}}<br>
+   {{'WELCOME.Mobile'|translate}}
+  </div>
+
+  <div class="section description">
+    {{'WELCOME.Description'|translate}}<br>
+    {{'WELCOME.DescriptionDetail'|translate}}<br>
+    <br>
+    {{'WELCOME.AreYouReady'|translate}}
+  </div>
+
+  <div class="section action">
+    <button ion-button color="#08719f" (click)="goToConfig()" clear>{{'WELCOME.ActionButton'|translate}}</button>
+  </div>
+
+</ion-content>

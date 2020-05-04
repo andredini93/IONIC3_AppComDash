@@ -1,0 +1,53 @@
+<ion-header *ngIf='!showShadow' no-border>
+
+
+  <ion-navbar >
+
+    <div class="totvs-toolbar logo" *ngIf='isRootPage && !showMenu' (click)='test()'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill="#4a5c60" fill-rule="evenodd" d="M11.999 23.998C5.373 23.998 0 18.626 0 12 0 5.374 5.373.002 11.999.002 18.628.002 24 5.374 24 12c0 6.626-5.372 11.998-12.001 11.998zm8.09-17.243c-.764-.653-10.77-3.182-11.532-2.916-.275.252-.421 2.162-.442 4.226-2.105-.497-3.921-.845-4.229-.738-.593.547-.593 8.844-.001 9.688.763.653 10.769 3.184 11.533 2.917.274-.253.422-2.162.442-4.226 2.105.496 3.92.845 4.229.737.593-.545.594-8.841 0-9.688zm-4.229 8.951c-3.109-.734-6.85-1.79-7.304-2.18-.318-.454-.465-3.061-.441-5.461 3.108.733 6.848 1.789 7.303 2.179.32.455.466 3.063.442 5.462z"/>
+      </svg>
+    </div>
+
+    <button  class="totvs-toolbar logo" ion-button menuToggle *ngIf='showMenu'>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <div class="totvs-toolbar title">
+      <ion-title>{{titleText}}</ion-title>
+    </div>
+
+    <div class="totvs-tollbar button {{buttonDisabled ? 'disabled' : ''}} " (click)="btClick($event)">
+      {{buttonText}}
+    </div>
+
+  </ion-navbar>
+</ion-header> 
+
+
+
+
+
+<!--    REMOVER QUANDO DESCOBRIR COMO ADICIONAR DIRETIVAS CONDICIONALMENTE     -->
+<ion-header *ngIf='showShadow'>
+  <ion-navbar >
+    <div class="totvs-toolbar logo" *ngIf='(isRootPage && !showMenu) || showLogo'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill="#4a5c60" fill-rule="evenodd" d="M11.999 23.998C5.373 23.998 0 18.626 0 12 0 5.374 5.373.002 11.999.002 18.628.002 24 5.374 24 12c0 6.626-5.372 11.998-12.001 11.998zm8.09-17.243c-.764-.653-10.77-3.182-11.532-2.916-.275.252-.421 2.162-.442 4.226-2.105-.497-3.921-.845-4.229-.738-.593.547-.593 8.844-.001 9.688.763.653 10.769 3.184 11.533 2.917.274-.253.422-2.162.442-4.226 2.105.496 3.92.845 4.229.737.593-.545.594-8.841 0-9.688zm-4.229 8.951c-3.109-.734-6.85-1.79-7.304-2.18-.318-.454-.465-3.061-.441-5.461 3.108.733 6.848 1.789 7.303 2.179.32.455.466 3.063.442 5.462z"/>
+      </svg>
+    </div>
+
+    <button  class="totvs-toolbar logo" ion-button menuToggle *ngIf='showMenu'>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <div class="totvs-toolbar title">
+      <ion-title>{{titleText}}</ion-title>
+    </div>
+
+    <div class="totvs-tollbar button {{buttonDisabled ? 'disabled' : ''}} " (click)="btClick($event)">
+      {{buttonText}}
+    </div>
+
+  </ion-navbar>
+</ion-header> 

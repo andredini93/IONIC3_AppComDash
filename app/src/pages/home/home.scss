@@ -1,0 +1,15 @@
+    page-home {
+        .texttitle {
+            font-size: large;
+            position: relative;
+        }
+        .tabs-md .tab-button {
+            min-height: 4.6rem;
+        }
+
+        super-tabs {
+            super-tab-button {
+                flex: 0 0 auto !important;
+            }
+        }
+    }

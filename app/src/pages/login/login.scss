@@ -1,0 +1,205 @@
+page-login {
+  .item {
+    background-color: transparent;
+  }
+
+  .totvs-login {
+    background-color: #fbfbfb;
+
+    .scroll-content {
+      padding: 24px;
+    }
+
+    .totvs-login-title {
+      color: #435357;
+      font-size: 24px;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .totvs-login-form {
+      .item, .item-block, .item-inner {
+        border-bottom: none;
+        padding: 0px;
+      }
+      
+      .item.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom: none;
+        box-shadow: 0 0 0 0;
+      }
+
+      .totvs-login-input {
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: inset 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #b6bdbf;
+        margin-top: 16px;
+
+        .input, .text-input, .text-input-ios { 
+          padding: 10px;
+          margin: 0px;
+          padding-left: 35px;
+        }
+
+        .text-input::placeholder { 
+          font-size: 16px;
+          color: #9da7a9;
+          line-height: 1.5;
+        }
+      }
+
+      .totvs-login-select-alias {
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: inset 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #b6bdbf;
+        
+        padding: 10px;
+
+        margin-top: 16px;
+
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .show-pass {
+        .toggle {
+          padding-right: 0px;
+        }
+
+        .label, .label-md, .label-ios {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .totvs-login-button {
+      height: 44px;
+      margin-top: 16px;
+      border-radius: 3px;
+      background-color: $toolbar-button-color;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      text-transform: initial;
+    }
+  }
+
+  .remember-me.item-block .item-inner {
+    border-bottom: 0px;
+  }
+
+  .remember-me {
+    padding-left: 0px;
+    
+    .toggle {
+      padding-right: 0px;
+    }
+
+    .label, .label-md, .label-ios {
+      font-size: 12px;
+    }
+  }
+
+  .login-input-icon {
+    position: absolute;
+    z-index: 999;
+    padding-left: 8px;
+    padding-top: 16px;
+    margin: 0px;
+  }
+
+  .ticon.user:before {
+    font-family: 'TotvsIcon';
+    font-size: 22px;
+    color: $toolbar-button-color;
+    content: "\E93C";
+  }
+
+  .ticon.lock:before {
+    font-family: 'TotvsIcon';
+    font-size: 22px;
+    color: $toolbar-button-color;
+    content: "\E924";
+  }
+  
+  /*
+  .totvs-login-title {
+    color: #4a5c60;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12%;
+    padding-bottom: 20%;
+  }
+
+  .totvs-login-form {
+    width: 100%;
+
+    border: 1px solid #e4e7e7;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 16px;
+
+    .show-pass {
+      .label, .label-md, .label-ios {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .item, .item-md, .item-ios {
+    padding-left: 0px;
+  }
+
+  .label, .label-md, .label-ios {
+    padding-left: 16px;
+    color: $totvs-label-color;
+  }
+
+  .input, .input-md, .input-ios {
+    padding-left: 16px;
+    
+
+    .text-input-clear-icon {
+      color: $totvs-text-input;
+      right: 0px;
+      background-color: transparent;
+    }
+  } 
+
+  .button, .button-md, .button-ios {
+    margin-bottom: 5px;
+  } 
+
+  .icon-bt {
+    background: #FFFFFF;
+    border: none;
+    color: initial;
+  }
+
+  .icon, .icon-md, .icon-ios {
+    padding-top: 5px;
+    font-size: 1.9em;
+  }
+
+  .icon-ios {
+    font-size: 2.1em;
+  }
+
+  .item-md [item-right], .item-ios [item-right] {
+    margin: 0px;
+  }
+  .totvs-button {
+    min-height: 46px;
+  }
+  */
+}
+

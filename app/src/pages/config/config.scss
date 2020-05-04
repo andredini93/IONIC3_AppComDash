@@ -1,0 +1,41 @@
+page-config {
+
+    .content {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .imageGrafic{
+        width: 50%;
+    }
+
+    .section {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section.title {
+        height: 40%;
+    }
+
+    .section.welcome {
+        height: 15%;
+        font-weight: bold;
+    }
+    
+    .section.description {
+        height: 25%;
+    }
+    
+    .section.action {
+        display: initial;
+    }
+}

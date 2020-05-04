@@ -1,0 +1,121 @@
+{
+    "COMMOM": {
+        "BACK_BUTTON": "Back",
+        "CANCEL": "Cancel",
+        "NEXT": "Next",
+        "ERROR": "Server error. Please, try again later ",
+        "LEAVE_TITLE": "Do you want to leave?",
+        "LEAVE_MSG": "Are you sure that you want to leave the app?",
+        "LEAVE_CONFIRM": "Leave"
+    },
+    "WELCOME": {
+        "Welcome": "Welcome to",
+        "SmartAnalytics": " TOTVS Analytics ",
+        "Mobile": "Mobile",
+        "Description": "In the nexts steps you'll setup your app.",
+        "DescriptionDetail": "In this step you can choose which project and indicators you want to follow.",
+        "AreYouReady": "When you ready, tap begin.",
+        "ActionButton": "BEGIN"
+    },
+    "PROJECT": {
+        "SelectProject": "Choose which project you would like to see",
+        "NO_PROJECTS": "No project found to setup."
+    },
+    "LOGIN": {
+        "USERNAME": "User",
+        "PASSWORD": "Password",
+        "SHOW_PASSWORD": "Show password",
+        "REMEMBER_ME": "Remember me",
+        "ALIAS": "Alias",
+        "LOGIN": "Enter",
+        "INVALID_LOGIN": "User or password wrong!",
+        "NETWORK_ERROR": "Check your internet connection and try again later.",
+        "ERROR": "There was an error on the server. Try again later."
+    },
+    "SELECTAPP": {
+        "SelectApp": "Select an application that you want to see:",
+        "NO_APPS": "No folders found with #Mobile in this project."
+    },
+    "CONFIG_REPORTS": {
+        "CREATE_TAB": {
+            "TITLE": "Create Tab",
+            "MESSAGE": "Write a tab name",
+            "BT_OK": "Create",
+            "BT_CANCEL": "Cancel"
+        },
+        "NO_SELECTED_MSG": "It's necessary select at least one report for each segment",
+        "ADD_TAB_BTN": "Add Tab",
+        "NEXT": "Next",
+        "FINISH": "Finish",
+        "ORDER_INFO_MSG": "You can create new tabs to organize the view of your reports",
+        "ORDER_REPORTS": "Tap and swipe to change the reports order"
+    },
+    "MENU": {
+        "DASHBOARDS": "Dashboards",
+        "CHANGE_PROJECT": "Change project",
+        "REMAKE_CONFIG": "Remake Settings",
+        "REORG_TABS": "Organize Tabs",
+        "LOGOUT": "Leave",
+        "LOGOUT_TITLE": "Are you sure?",
+        "LOGOUT_MSG": "If you leave your offline settings will be cleared.",
+        "LOGOUT_CONFIRM": "Leave",
+        "LOGOUT_CANCEL": "Cancel",
+        "METRICS": "Metrics",
+        "ATTRIBUTES": "Attributes",
+        "FILTERS": "Filters"
+    },
+    "FILTERS": {
+        "HIDDEN_FILTERS": "There is filters that cannot be diplayed",
+        "OPTIONS": "Options",
+        "SHOW_LEGENDS": "Show Legends",
+        "SHOW_VALUES": "Show Values",
+        "SHOW_Y": "Show Y",
+        "SHOW_X": "Show X",
+        "ROUND_VALUES": "Round values",
+        "APPLY": "Apply"
+    },
+    "REPORT": {
+        "SHARE_EMAIL": "Share by email",
+        "EXPORT": "Save to Album",
+        "REFRESH": "Refresh",
+        "SHOW_DETAILS": "Show Details",
+        "UNABLE_TO_RENDER": "This report cannot be displayed",
+        "BLOCKED": "Can not view the graphic. Access blocked!.",
+        "REPORT_TABLE_INFO": "This report is a table, tap here to open.",
+        "NO_CONTENT": "No data matches the filter criteria",
+        "SHARE_MSG": "Shared via Analytics",
+        "PHOTO_SAVE_ERROR": "Error saving image",
+        "REMOVE_REPORT_ERROR": "Error removing report",
+        "PHOTO_SAVED": "Image saved",
+        "UNSUPPORTED": "This report type is not supported",
+        "REMOVE": "Remove"
+    },
+    "RELOAD_PROJECT": {
+        "GOT_SAVED_PROJECTS": "Your configured projects:",
+        "SET_NEW_PROJECT": "Setup new project",
+        "RELOAD": "Reload"
+    },
+    "REORDER_TABS": {
+        "REORG_TABS": "Organize Tabs",
+        "DELETE_PROJECT": "Remove Project",
+        "DIALOG_TITLE": "Attention",
+        "DIALOG_MSG": "Removing this project WILL NOT delete any data in TOTVS Analytics, it will only remove this configuration of your preferences, wich can be reconfigured later.",
+        "CONFIRM": "Remove",
+        "CANCEL": "Cancel",
+        "REMOVE_ERROR": "Error removing project"
+    },
+    "APP-RATE": {
+        "TITLE": "Are you enjoying the Legal Task?",
+        "MESSAGE": "Could you evaluate us at the store? It only takes a few seconds!",
+        "RATE": "Evaluate",
+        "LATER": "Evaluate later",
+        "NO": "No, thank you."
+    },
+    "TABLE": {
+        "avg": "AVG",
+        "max": "Max",
+        "med": "Med",
+        "min": "Min",
+        "sum": "Sum"
+    }
+}

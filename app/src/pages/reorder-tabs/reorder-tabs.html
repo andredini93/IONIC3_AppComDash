@@ -1,0 +1,26 @@
+<thf-toolbar [showMenu]='true' [titleText]="'ANALYTICS'">
+</thf-toolbar>
+<ion-content has-header>
+    <h1 text-center>{{ 'REORDER_TABS.REORG_TABS' | translate}}</h1>
+    <ion-list paddind-top side='start' *ngIf='tabs.length > 0' reorder="true" (ionItemReorder)="reorderTabs($event)">
+        <ion-item  #item  *ngFor="let tab of tabs;let i = index">
+            &nbsp;<ion-label>{{ tab.title.replace('#Mobile ','') }}</ion-label>
+            <ion-badge *ngIf='tab.new > 0' color="danger" item-end>{{tab.new}}</ion-badge>
+            <button ion-button clear item-end style="margin-right: 0px" (click)="navigateToReorderReports(i)">
+                <ion-icon class='icon' large name="settings"></ion-icon>
+            </button>
+            <ion-toggle [(ngModel)]="tab.visible" (ngModelChange)="toggleVisibility(tab)"></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class='footer'>
+    <button ion-button color="#08719f" (click)='deleteProject()' block>{{'REORDER_TABS.DELETE_PROJECT' | translate}}</button>
+</ion-footer>
+<!-- 
+    <ion-item-options side="right">
+                <button ion-button toggle  (click)="navigateToReorderReports(item,i)">
+                    <ion-icon class='icon' large name="settings"></ion-icon>
+                </button>
+            </ion-item-options>
+        -->
