@@ -30,6 +30,7 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { ReorderTabsPage } from '../pages/reorder-tabs/reorder-tabs';
 import { ReorderReportsPage } from '../pages/reorder-reports/reorder-reports';
 import { ReloadProject } from '../pages/reload-project/reload-project';
+import { DashboardKpiPage } from '../pages/dashboard-kpi/dashboard-kpi';
 
 
 //COMPONENTS
@@ -102,6 +103,7 @@ export function configFactory() {
 		ReorderReportsPage,
 		ReloadProject,
 		ModalTable,
+		DashboardKpiPage,
 		ReportGeneratorComponent
 	],
 	imports: [
@@ -141,6 +143,7 @@ export function configFactory() {
 		ReorderTabsPage,
 		ModalTable,
 		ReloadProject,
+		DashboardKpiPage,
 		ReorderReportsPage
 	],
 	providers: [

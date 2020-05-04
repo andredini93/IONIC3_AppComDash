@@ -14,6 +14,7 @@ import { HomePage } from '../home/home'
 import { ReorderTabsPage } from '../reorder-tabs/reorder-tabs'
 import * as moment from 'moment';
 import { SessionService } from '../../providers/session.service';
+import { DashboardKpiPage } from '../dashboard-kpi/dashboard-kpi';
 
 
 @Component({
@@ -105,6 +106,9 @@ export class MenuPage {
 		this.current = page;
 
 		switch (page) {
+			case 'DashboardKpiPage':
+				this.rootPage = DashboardKpiPage;
+				break;
 			case 'DashboardPage':
 				this.rootPage = HomePage;
 				break;

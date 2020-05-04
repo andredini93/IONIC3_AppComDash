@@ -7,6 +7,10 @@
         </div>
 
         <ion-list no-lines>
+            <ion-item class='menu-item' menuToggle (tap)='navigate("DashboardKpiPage")' [ngClass]=" current == 'DashboardKpiPage' ? 'active' : ''">
+                <ion-icon name="easel" item-left></ion-icon>
+                DashBoards KPI
+            </ion-item>
             <ion-item class='menu-item' menuToggle (tap)='navigate("DashboardPage")' [ngClass]=" current == 'DashboardPage' ? 'active' : ''">
                 <ion-icon name="trending-up" item-left></ion-icon>
                 {{'MENU.DASHBOARDS' | translate}}
