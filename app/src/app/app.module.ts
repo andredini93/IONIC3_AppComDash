@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { UserAgent } from '@ionic-native/user-agent';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { MyApp } from './app.component';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -175,7 +176,8 @@ export function configFactory() {
 		// 	useClass: HttpsRequestInterceptor,
 		// 	multi: true
 		// },
-		UserAgent
+		UserAgent,
+		InAppBrowser
 	]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
+import { factory } from '@gooddata/gooddata-js';
 import { MingleService } from '@totvs/mobile-mingle';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, App, ToastController, LoadingController } from 'ionic-angular';
@@ -91,7 +92,13 @@ export class LoginPage {
 				(authError) => {
 					loader.dismiss();
 					this._showErrorToast(authError);
-				});
+        });
+    
+    //login gooddata SDK
+    var gooddata = factory({ domain: 'analytics.totvs.com.br' });
+        gooddata.user.login('andre.dini@totvs.com.br', 'andre123')
+        .then((response) => console.log('Login OK', response))
+        .catch((apiError) => console.error('Login failed', apiError, "\n\n", apiError.responseBody));
 	}
 
 	public managePwd(passwordEl) {

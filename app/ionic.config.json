@@ -7,7 +7,9 @@
   "proxies": [
     {
       "path": "/gooddata",
-      "proxyUrl": "http://localhost:5050/"
+      "proxyUrl": "https://localhost:8443",
+      "changeOrigin": false,
+      "secure": false
     }
   ],
   "id": "d44d59b5",

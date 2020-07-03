@@ -19,18 +19,19 @@ export class SessionService {
 	}
 	set ALIAS(alias: string) {
 		this._storageService.set('ALIAS', alias);
-		this._ALIAS = alias;
+    this._ALIAS = alias;
 		if (!this._platform.is('cordova')) {
 			this.SERVER = 'gooddata/'
 			this.userAgent = navigator.userAgent;
 		}
 		else if (alias == 'FASTANALYTICS' || alias == 'TOTVSANALYTICS') {
-			this.SERVER = 'https://analytics.totvs.com.br/gdc/'
+			this.SERVER = 'https://analytics.totvs.com.br/gdc'
 			this.userAgent = 'Analytics/1';
 		} else {
-			this.SERVER = 'https://analytics.fluig.com/gdc/'
+			this.SERVER = 'https://analytics.fluig.com/gdc'
 			this.userAgent = 'Analytics/1';
-		}
+    }
+    alert('SERVER: ' + this.SERVER);
 	}
 
 	private _REMEMEBER_ME

@@ -28,6 +28,7 @@ import { AppReviewService } from '../providers/app.review';
 
 import { ReloadProject } from '../pages/reload-project/reload-project';
 import { Storage } from '@ionic/storage';
+import { DashboardKpiPage } from '../pages/dashboard-kpi/dashboard-kpi';
 
 
 @Component({
